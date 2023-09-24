@@ -6,10 +6,11 @@ test:
 	python -m pytest -vv *.py
 
 format:
-	black *.py
+	black *.py 
+
 
 
 lint:
-	pylint --disable=R,C hello.py
+	pylint --disable=R,C calc.py
 
 all: install lint test
